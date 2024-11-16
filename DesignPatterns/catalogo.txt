@@ -1,0 +1,126 @@
+[*] Criacionais
+	# Abstract Factory
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Builder
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Factory
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Prototype
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Singleton
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+[*] Estruturais
+	# Adapter
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Bridge
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Composite
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Decorator
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Facade
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Flyweight
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Proxy
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+[*] Comportamentais
+	# Chain of Responsibility
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Command
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Interpreter
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Iterator
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Mediator
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Visitor
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Memento
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Observer
+		* Definição: O Observer é um padrão de projeto de software que define uma dependência um-para-muitos entre objetos, de modo que quando um objeto muda seu estado, todos seus dependentes são notificados e atualizados automaticamente.
+
+		* Aplicabilidade (Quando Utilizar):
+			+ Quando uma abstração tem dois aspectos, um depende do outro, e é necessário que eles possam variar e serem reutilizados independentemente.
+			+ Quando uma alteração em um objeto requer a alteração de outros, e não se conhece quantos objetos precisam ser alterados.
+			+ Quando um objeto deve ser capaz de notificar outros objetos sem os conhecer, ou seja, tais objetos não podem ser fortemente acoplados.
+
+	# State
+		* Definição:
+
+		* Aplicabilidade (Quando Utilizar):
+
+	# Strategy: 
+		* Definição: O padrão de projeto Strategy define uma família de algoritmos que podem ser intercambiados, ou seja, utilizar um algoritmo no lugar de outro, conforme a necessidade de quem os utiliza.
+		
+		* Aplicabilidade (Quando Utilizar):
+			+ Quando muitas classes fazem a mesma coisa de forma diferente.
+			+ Quando se necessita de variantes de um algoritmo.
+			+ Remoção de operadores condicionais que determinam o comportamento do algoritmo com base em projetos diferentes.
+
+	# Template Method
+		* Definição: ​​O padrão Template Method define o esqueleto de um algoritmo dentro de um método, transferindo alguns de seus passos para subclasses.
+		
+		* Aplicabilidade (Quando Utilizar):
+			+ Para implementar partes invariantes de um algoritmo apenas uma vez, deixando para as subclasses apenas a implementação daquilo que pode variar.
+			+ Controlar extensões de subclasses, sabendo o que as subclasses devem implementar e até onde devem implementar.
+			+ Evitar duplicação de código entre classes comuns.
