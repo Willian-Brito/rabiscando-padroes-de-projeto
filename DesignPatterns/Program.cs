@@ -2,6 +2,8 @@
 using DesignPatterns.Comportamentais.State;
 using DesignPatterns.Comportamentais.Strategy;
 using DesignPatterns.Comportamentais.TemplateMethod;
+using DesignPatterns.Estruturais.Adapter;
+using DesignPatterns.Estruturais.Decorator;
 
 while (true)
 {
@@ -68,18 +70,18 @@ while (true)
         #endregion
 
         #region 02 - Padrões Estruturais
-        // case "6":
-        //     Adapter.Executar();
-        //     break;
+        case "6":
+            Adapter.Executar();
+            break;
         // case "7":
         //     Bridge.Executar();
         //     break;
         // case "8":
         //     Composite.Executar();
         //     break;
-        // case "9":
-        //     Decorator.Executar();
-        //     break;
+        case "9":
+            Decorator.Executar();
+            break;
         // case "10":
         //     Facade.Executar();
         //     break;
