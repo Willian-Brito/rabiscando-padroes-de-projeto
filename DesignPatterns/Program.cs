@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Comportamentais.Observer;
+using DesignPatterns.Comportamentais.State;
 using DesignPatterns.Comportamentais.Strategy;
 using DesignPatterns.Comportamentais.TemplateMethod;
 
@@ -112,9 +113,9 @@ while (true)
         case "19":
             Observer.Executar();
             break;
-        // case "20":
-        //     State.Executar();
-        //     break;
+        case "20":
+            State.Executar();
+            break;
         case "21":
             Strategy.Executar();
             break;

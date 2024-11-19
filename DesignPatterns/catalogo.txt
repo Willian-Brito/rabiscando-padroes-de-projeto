@@ -1,103 +1,146 @@
 [*] Criacionais
 	# Abstract Factory
-		* Definição:
+		* Definição: O padrão Abstract Factory fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
+
+		* Exemplo da Aula: Simulação de um emissor de boletos com diferentes cálculos de juros, desconto e multa para dois bancos diferentes.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Builder
-		* Definição:
+		* Definição: O padrão Builder separa a construção de um objeto complexo de sua representação de modo que o mesmo processo de construção de um objeto possa criar diferentes representações.
+
+		* Exemplo da Aula: Criação de um Builder para uma classe que gera PDFs, onde tal classe possui muitos parâmetros em sua criação.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Factory
-		* Definição:
+		* Definição: O Padrão Factory Method define uma interface para criar um objeto, mas permite que a subclasses possam decidir qual classe instanciar, possibilitando que uma classe seja capaz de prorrogar a instanciação de uma classe para subclasses.
+
+		* Exemplo da Aula: Simulação de um emissor de boletos com diferentes cálculos de juros, desconto e multa para dois bancos diferentes. Tais boletos também possuem 3 diferente prazos de vencimentos pré-estipulados.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Prototype
-		* Definição:
+		* Definição: O padrão Prototype especifica tipos de objetos a serem criados usando como base uma instância de outro objeto que serve como protótipo. Este padrão permite a clonagem de objetos existentes sem provocar dependência de suas classes.
+
+		* Exemplo da Aula: Criação de protótipos de objetos semelhantes e de difícil criação que são muito requisitados no sistema de uma biblioteca virtual.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Singleton
-		* Definição:
+		* Definição: O padrão Singleton garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.
+
+		* Exemplo da Aula: Criação de um único objeto de conexão a um banco de dados, evitando abertura de conexões desnecessárias.
 
 		* Aplicabilidade (Quando Utilizar):
 
 [*] Estruturais
 	# Adapter
-		* Definição:
+		* Definição: O padrão Adapter converte a interface de uma classe para outra interface que o cliente esperar encontrar. O Adaptador permite que classes com interfaces incompatíveis trabalhem juntas.
+
+		* Exemplo da Aula: Adaptação de interfaces de Gateway de pagamentos que antes eram incompatíveis com a interface que nosso sistema esperava.
 
 		* Aplicabilidade (Quando Utilizar):
+			+ Quando existe a necessidade de utilizar uma classe existente e sua interface é diferente da esperada.
+			+ Quando se deseja criar uma classe reutilizável que coopera com classes não relacionadas a ela ou que não foram previstas, ou seja, classes que não necessariamente têm interfaces compatíveis.
+			+ (Somente para adaptadores de objeto) Quando é necessário usar várias subclasses existentes, mas é impraticável adaptar sua interface sub-classificando cada uma delas. Um adaptador de objeto pode adaptar a interface de sua superclasse.
 
 	# Bridge
-		* Definição:
+		* Definição: O Padrão Bridge desacopla uma abstração de sua implementação, ou seja, permite dividir uma classe grande ou um conjunto de classes diretamente ligadas em duas hierarquias separadas, deste modo as duas hierarquias podem variar de forma independente.
+
+		* Exemplo da Aula: Remoção de classes desnecessárias para o envio de mensagens que partem de  emissores​ de tipos distintos. Tais mensagens podem ser enviadas por canais diferentes (e-mail e SMS).
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Composite
-		* Definição:
+		* Definição: ​O padrão Composite permite a composição de objetos em estruturas de árvore para representar hierarquias parte-todo. Com esse padrão, os clientes podem tratar objetos individuais ou composições de objetos de maneira transparente e uniforme.
+
+		* Exemplo da Aula: Consulta, inclusão e remoção de arquivos em um sistema de diretórios que tem uma árvore como estrutura de dados. O diretório é organizado em pastas e sub-pastas.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Decorator
-		* Definição:
+		* Definição: O Padrão Decorator anexa responsabilidades adicionais a um objeto dinamicamente. Os Decorators fornecem uma alternativa flexível ao uso de subclasses para extensão de funcionalidades.
+
+		* Exemplo da Aula: Cálculo de preço de pizzas no sistema de uma pizzaria onde existem diversos acréscimos de ingredientes para cada pizza.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Facade
-		* Definição:
+		* Definição: O padrão Facade fornece uma interface unificada para um conjunto de interfaces em um subsistema. O Facade define uma interface de nível mais alto que facilita a utilização do subsistema.
+
+		* Exemplo da Aula: Simplificação da interface do sub-sistema de vendas de um e-commerce.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Flyweight
-		* Definição:
+		* Definição: ​​O padrão Flyweight permite usar compartilhamento para suportar grandes quantidades de objetos de granularidade fina.
+
+		* Exemplo da Aula: Economia de armazenamento ao compartilhar informações comuns entre milhares de objetos "Árvore" em um software para criação de projetos de reflorestamento.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Proxy
-		* Definição:
+		* Definição: ​O padrão proxy fornece um substituto ou representante de outro objeto para gerenciar o acesso a ele.
+
+		* Exemplo da Aula: Criação de um objeto Proxy Virtual para um objeto que demora muito para responder solicitações. O papel do proxy nesse exemplo é retardar a criação de tal objeto até que ele seja estritamente necessário.
 
 		* Aplicabilidade (Quando Utilizar):
 
 [*] Comportamentais
 	# Chain of Responsibility
-		* Definição:
+		* Definição: O Padrão Chain of Responsibility evita o acoplamento do remetente de uma solicitação ao seu receptor, dando a mais de um objeto a oportunidade de tratar a solicitação. Ele encadeia os objetos receptores, passando a solicitação ao longo da cadeia até que um objeto a trate.
+
+		* Exemplo da Aula: Calculo de pontos em um plano de fidelização de cliente com base no valor do pedido feito no sistema de uma hamburgueria.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Command
-		* Definição:
+		* Definição: ​O padrão de projeto Command encapsula uma solicitação como um objeto, isso lhe permite parametrizar clientes com diferentes solicitações, enfileirar ou registrar (log) solicitações e suportar solicitações que podem ser desfeitas.
+
+		* Exemplo da Aula: Dinamização e automação dos comandos que um aplicativo envia para dispositivos inteligentes, tais como lâmpadas e aparelhos de ar-condicionado em uma smart home.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Interpreter
-		* Definição:
+		* Definição: O padrão Interpreter busca definir uma representação para a gramática de uma determinada linguagem, juntamente com um interpretador que usa tal representação para interpretar sentenças dessa linguagem.
+
+		* Exemplo da Aula: Criação de um interpretador de expressões matemáticas de adição, subtração, multiplicação e divisão entre dígitos ou variáveis. Tais expressões seguem a NPS (reverse polish notation).
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Iterator
-		* Definição:
+		* Definição: ​O padrão de projeto Iterator  fornece uma maneira de acessar, sequencialmente, os elementos de um objeto agregado sem expor a sua representação subjacente.
+
+		* Exemplo da Aula: Criação de iteradores que atuam sobre uma lista e sobre uma matriz, removendo tal responsabilidade de quem as utiliza.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Mediator
-		* Definição:
+		* Definição: O padrão Mediator é um padrão de projeto que serve para encapsular a maneira que um conjunto de objetos interage, ou seja, a comunicação entre os objetos é estabelecida através de um objeto mediador (Mediator). Este padrão de projeto promove o fraco acoplamento ao evitar que objetos se refiram uns aos outros de forma explícita e permite variar suas intenções independentemente.
+
+		* Exemplo da Aula: Criação de um mediator em um chat onde existe um chatBot moderador que impede que uma pessoa envie duas mensagens consecutivas.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Visitor
-		* Definição:
+		* Definição: O padrão de projeto Visitor representa uma operação a ser executada nos membros de uma estrutura de objetos. Ele permite definir uma nova operação sem mudar as classes dos membros sobre quais opera.
+
+		* Exemplo da Aula: Cálculo de quanto lucro cada produto, departamento e supermercado é capaz de gerar em uma rede de supermercados.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Memento
-		* Definição:
+		* Definição: O padrão Memento permite capturar e externalizar um estado interno de um objeto sem violar o encapsulamento, deste modo, o objeto pode ser restaurado no futuro para este estado capturado.
+
+		* Exemplo da Aula: Criação de um histórico de mudanças feitas em um textbox que possui diversos atributos, tais como font-family, font-size posição no eixo x e y entre outros. Graças ao Memento o textbox poderá ser restaurado a um estado anterior.
 
 		* Aplicabilidade (Quando Utilizar):
 
 	# Observer
 		* Definição: O Observer é um padrão de projeto de software que define uma dependência um-para-muitos entre objetos, de modo que quando um objeto muda seu estado, todos seus dependentes são notificados e atualizados automaticamente.
+
+		* Exemplo da Aula: Implementação de uma Newsletter onde clientes, funcionários, parceiros e fornecedores podem se inscrever para receber emails de notícias sobre a determinada empresa.
 
 		* Aplicabilidade (Quando Utilizar):
 			+ Quando uma abstração tem dois aspectos, um depende do outro, e é necessário que eles possam variar e serem reutilizados independentemente.
@@ -105,13 +148,19 @@
 			+ Quando um objeto deve ser capaz de notificar outros objetos sem os conhecer, ou seja, tais objetos não podem ser fortemente acoplados.
 
 	# State
-		* Definição:
+		* Definição: O padrão de projeto State permite que um objeto altere o seu comportamento quando o seu estado interno muda. O objeto parecerá ter mudado de classe.
+
+		* Exemplo da Aula: Gerenciamento de ações que podem ser realizadas em um pedido de um e-commerce conforme o estado em que o pedido se encontra.
 
 		* Aplicabilidade (Quando Utilizar):
+			+ Quando o comportamento de um objeto depende do seu estado interno, e com base nele muda seu comportamento em tempo de execução.
+			+ Quando operações possuírem instruções condicionais grandes que dependam do estado interno do objeto. Frequentemente várias destas operações terão a mesmas estruturas condicionais.
 
 	# Strategy: 
 		* Definição: O padrão de projeto Strategy define uma família de algoritmos que podem ser intercambiados, ou seja, utilizar um algoritmo no lugar de outro, conforme a necessidade de quem os utiliza.
 		
+		* Exemplo da Aula: Cálculo de diferentes tipos de frete disponíveis para pedidos feitos em setores distintos de um e-commerce.
+
 		* Aplicabilidade (Quando Utilizar):
 			+ Quando muitas classes fazem a mesma coisa de forma diferente.
 			+ Quando se necessita de variantes de um algoritmo.
@@ -120,6 +169,8 @@
 	# Template Method
 		* Definição: ​​O padrão Template Method define o esqueleto de um algoritmo dentro de um método, transferindo alguns de seus passos para subclasses.
 		
+		* Exemplo da Aula: ​Implementação de um módulo de pagamentos do sistema de uma loja de confecções. Cada tipo de pagamento aplica diferentes taxas e descontos ao seu valor.
+
 		* Aplicabilidade (Quando Utilizar):
 			+ Para implementar partes invariantes de um algoritmo apenas uma vez, deixando para as subclasses apenas a implementação daquilo que pode variar.
 			+ Controlar extensões de subclasses, sabendo o que as subclasses devem implementar e até onde devem implementar.
