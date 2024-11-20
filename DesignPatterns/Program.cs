@@ -4,6 +4,7 @@ using DesignPatterns.Comportamentais.Strategy;
 using DesignPatterns.Comportamentais.TemplateMethod;
 using DesignPatterns.Estruturais.Adapter;
 using DesignPatterns.Estruturais.Decorator;
+using DesignPatterns.Estruturais.Facade;
 
 while (true)
 {
@@ -82,9 +83,9 @@ while (true)
         case "9":
             Decorator.Executar();
             break;
-        // case "10":
-        //     Facade.Executar();
-        //     break;
+        case "10":
+            Facade.Executar();
+            break;
         // case "11":
         //     Flyweight.Executar();
         //     break;
