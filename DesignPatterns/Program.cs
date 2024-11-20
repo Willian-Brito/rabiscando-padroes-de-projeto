@@ -2,6 +2,7 @@
 using DesignPatterns.Comportamentais.State;
 using DesignPatterns.Comportamentais.Strategy;
 using DesignPatterns.Comportamentais.TemplateMethod;
+using DesignPatterns.Criacionais.FactoryMethod;
 using DesignPatterns.Estruturais.Adapter;
 using DesignPatterns.Estruturais.Decorator;
 using DesignPatterns.Estruturais.Facade;
@@ -56,9 +57,9 @@ while (true)
         // case "1":
         //     AbstractFactory.Executar();
         //     break;
-        // case "2":
-        //     FactoryMethod.Executar();
-        //     break;
+        case "2":
+            FactoryMethod.Executar();
+            break;
         // case "3":
         //     Singleton.Executar();
         //     break;
