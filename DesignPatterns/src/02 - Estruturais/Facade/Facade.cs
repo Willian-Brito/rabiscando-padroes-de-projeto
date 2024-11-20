@@ -6,17 +6,13 @@ public class Facade
 {
     public static void Executar()
     {
-        //Criação do consumidor.
+        // # Criação do consumidor.
         var consumidor = new Consumidor("Willian Brito", "12345678910", "wbrito@facade.com");
 
-        //Criação de produtos.
+        // # Criação de produtos.
         var produto1 = new Produto("Blusa Rosa", "Blusa feminina rosa", 80.99M);
         var produto2 = new Produto("Camiseta Preta", "Camiseta masculina preta", 49.9M);
         var produto3 = new Produto("Calça Jeans", "Calça Jeans Masculina", 119.90M);
-        
-
-        // ==== Até aqui apenas criamos os objetos básicos que uma venda precisa. ====
-        // ==== Agora vamos ao processo de venda propriamente dito. ====
 
         // # Sem Facade
         // var pedido = new Pedido(consumidor);
