@@ -2,6 +2,7 @@
 using DesignPatterns.Comportamentais.State;
 using DesignPatterns.Comportamentais.Strategy;
 using DesignPatterns.Comportamentais.TemplateMethod;
+using DesignPatterns.Criacionais.AbstractFactory;
 using DesignPatterns.Criacionais.FactoryMethod;
 using DesignPatterns.Estruturais.Adapter;
 using DesignPatterns.Estruturais.Decorator;
@@ -50,13 +51,13 @@ while (true)
     Console.WriteLine("");
     Console.WriteLine("------------------------");
     Console.WriteLine("");
-
+    
     switch (opcao)
     {
         #region 01 - Padrões Criacionais
-        // case "1":
-        //     AbstractFactory.Executar();
-        //     break;
+        case "1":
+            AbstractFactory.Executar();
+            break;
         case "2":
             FactoryMethod.Executar();
             break;
