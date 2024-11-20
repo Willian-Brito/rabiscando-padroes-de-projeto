@@ -4,6 +4,7 @@ using DesignPatterns.Comportamentais.Strategy;
 using DesignPatterns.Comportamentais.TemplateMethod;
 using DesignPatterns.Criacionais.AbstractFactory;
 using DesignPatterns.Criacionais.FactoryMethod;
+using DesignPatterns.Criacionais.Builder;
 using DesignPatterns.Estruturais.Adapter;
 using DesignPatterns.Estruturais.Decorator;
 using DesignPatterns.Estruturais.Facade;
@@ -64,9 +65,9 @@ while (true)
         // case "3":
         //     Singleton.Executar();
         //     break;
-        // case "4":
-        //     Builder.Executar();
-        //     break;
+        case "4":
+            Builder.Executar();
+            break;
         // case "5":
         //     Prototype.Executar();
         //     break;
