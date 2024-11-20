@@ -8,6 +8,7 @@ using DesignPatterns.Criacionais.Builder;
 using DesignPatterns.Estruturais.Adapter;
 using DesignPatterns.Estruturais.Decorator;
 using DesignPatterns.Estruturais.Facade;
+using DesignPatterns.Comportamentais.ChainOfResponsability;
 
 while (true)
 {
@@ -98,9 +99,9 @@ while (true)
         #endregion
 
         #region 03 - Padrões Comportamentais
-        // case "13":
-        //     ChainOfResposability.Executar();
-        //     break;
+        case "13":
+            ChainOfResponsability.Executar();
+            break;
         // case "14":
         //     Command.Executar();
         //     break;            
