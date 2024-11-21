@@ -9,6 +9,7 @@ using DesignPatterns.Estruturais.Adapter;
 using DesignPatterns.Estruturais.Decorator;
 using DesignPatterns.Estruturais.Facade;
 using DesignPatterns.Comportamentais.ChainOfResponsability;
+using DesignPatterns.Comportamentais.Iterator;
 
 while (true)
 {
@@ -108,9 +109,9 @@ while (true)
         // case "15":
         //     Interpreter.Executar();
         //     break;
-        // case "16":
-        //     Iterator.Executar();
-        //     break;
+        case "16":
+            Iterator.Executar();
+            break;
         // case "17":
         //     Mediator.Executar();
         //     break;
