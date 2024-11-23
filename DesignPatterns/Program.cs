@@ -15,6 +15,7 @@ using DesignPatterns.Comportamentais.ChainOfResponsability;
 using DesignPatterns.Comportamentais.Iterator;
 using DesignPatterns.Comportamentais.Command;
 using DesignPatterns.Comportamentais.Visitor;
+using DesignPatterns.Comportamentais.Memento;
 
 while (true)
 {
@@ -120,9 +121,9 @@ while (true)
         // case "17":
         //     Mediator.Executar();
         //     break;
-        // case "18":
-        //     Memento.Executar();
-        //     break;
+        case "18":
+            Memento.Executar();
+            break;
         case "19":
             Observer.Executar();
             break;
