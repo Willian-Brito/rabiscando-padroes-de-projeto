@@ -11,6 +11,7 @@ using DesignPatterns.Comportamentais.TemplateMethod;
 using DesignPatterns.Comportamentais.ChainOfResponsability;
 using DesignPatterns.Comportamentais.Iterator;
 using DesignPatterns.Comportamentais.Command;
+using DesignPatterns.Estruturais.Bridge;
 
 while (true)
 {
@@ -80,9 +81,9 @@ while (true)
         case "6":
             Adapter.Executar();
             break;
-        // case "7":
-        //     Bridge.Executar();
-        //     break;
+        case "7":
+            Bridge.Executar();
+            break;
         // case "8":
         //     Composite.Executar();
         //     break;
