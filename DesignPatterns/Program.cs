@@ -1,15 +1,16 @@
-﻿using DesignPatterns.Comportamentais.Observer;
-using DesignPatterns.Comportamentais.State;
-using DesignPatterns.Comportamentais.Strategy;
-using DesignPatterns.Comportamentais.TemplateMethod;
-using DesignPatterns.Criacionais.AbstractFactory;
+﻿using DesignPatterns.Criacionais.AbstractFactory;
 using DesignPatterns.Criacionais.FactoryMethod;
 using DesignPatterns.Criacionais.Builder;
 using DesignPatterns.Estruturais.Adapter;
 using DesignPatterns.Estruturais.Decorator;
 using DesignPatterns.Estruturais.Facade;
+using DesignPatterns.Comportamentais.Observer;
+using DesignPatterns.Comportamentais.State;
+using DesignPatterns.Comportamentais.Strategy;
+using DesignPatterns.Comportamentais.TemplateMethod;
 using DesignPatterns.Comportamentais.ChainOfResponsability;
 using DesignPatterns.Comportamentais.Iterator;
+using DesignPatterns.Comportamentais.Command;
 
 while (true)
 {
@@ -103,9 +104,9 @@ while (true)
         case "13":
             ChainOfResponsability.Executar();
             break;
-        // case "14":
-        //     Command.Executar();
-        //     break;            
+        case "14":
+            Command.Executar();
+            break;            
         // case "15":
         //     Interpreter.Executar();
         //     break;
