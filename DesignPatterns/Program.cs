@@ -12,6 +12,7 @@ using DesignPatterns.Comportamentais.ChainOfResponsability;
 using DesignPatterns.Comportamentais.Iterator;
 using DesignPatterns.Comportamentais.Command;
 using DesignPatterns.Estruturais.Bridge;
+using DesignPatterns.Estruturais.Proxy;
 
 while (true)
 {
@@ -96,9 +97,9 @@ while (true)
         // case "11":
         //     Flyweight.Executar();
         //     break;
-        // case "12":
-        //     Proxy.Executar();
-        //     break;
+        case "12":
+            Proxy.Executar();
+            break;
         #endregion
 
         #region 03 - Padrões Comportamentais
