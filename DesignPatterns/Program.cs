@@ -13,6 +13,7 @@ using DesignPatterns.Comportamentais.Iterator;
 using DesignPatterns.Comportamentais.Command;
 using DesignPatterns.Estruturais.Bridge;
 using DesignPatterns.Estruturais.Proxy;
+using DesignPatterns.Estruturais.Composite;
 
 while (true)
 {
@@ -85,9 +86,9 @@ while (true)
         case "7":
             Bridge.Executar();
             break;
-        // case "8":
-        //     Composite.Executar();
-        //     break;
+        case "8":
+            Composite.Executar();
+            break;
         case "9":
             Decorator.Executar();
             break;
