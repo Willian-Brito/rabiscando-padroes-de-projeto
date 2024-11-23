@@ -4,6 +4,9 @@ using DesignPatterns.Criacionais.Builder;
 using DesignPatterns.Estruturais.Adapter;
 using DesignPatterns.Estruturais.Decorator;
 using DesignPatterns.Estruturais.Facade;
+using DesignPatterns.Estruturais.Bridge;
+using DesignPatterns.Estruturais.Proxy;
+using DesignPatterns.Estruturais.Composite;
 using DesignPatterns.Comportamentais.Observer;
 using DesignPatterns.Comportamentais.State;
 using DesignPatterns.Comportamentais.Strategy;
@@ -11,9 +14,7 @@ using DesignPatterns.Comportamentais.TemplateMethod;
 using DesignPatterns.Comportamentais.ChainOfResponsability;
 using DesignPatterns.Comportamentais.Iterator;
 using DesignPatterns.Comportamentais.Command;
-using DesignPatterns.Estruturais.Bridge;
-using DesignPatterns.Estruturais.Proxy;
-using DesignPatterns.Estruturais.Composite;
+using DesignPatterns.Comportamentais.Visitor;
 
 while (true)
 {
@@ -134,9 +135,9 @@ while (true)
         case "22":
             TemplatMethod.Executar();
             break;
-        // case "23":
-        //     Visitor.Executar();
-        //     break;
+        case "23":
+            Visitor.Executar();
+            break;
         #endregion
     }
 
