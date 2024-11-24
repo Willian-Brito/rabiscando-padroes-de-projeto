@@ -87,12 +87,12 @@ Os Padrões são divididos em 3 grupos:
 
 - **Diagrama de Classe (Com Contexto):**
 <div align="center">
-  <img src="" alt="diagrama de classe sem contexto" />
+  <img src="https://raw.githubusercontent.com/Willian-Brito/rabiscando-padroes-de-projeto/refs/heads/main/prints/Builder.png" alt="diagrama de classe sem contexto" />
 </div>
 
 - **Diagrama de Classe (Sem Contexto):**
 <div align="center">
-  <img src="" alt="diagrama de classe sem contexto" />
+  <img src="https://raw.githubusercontent.com/Willian-Brito/rabiscando-padroes-de-projeto/refs/heads/main/prints/Builder%20-%20original.png" alt="diagrama de classe sem contexto" />
 </div>
 
 ### 3. Factory Method
