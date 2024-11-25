@@ -16,6 +16,7 @@ using DesignPatterns.Comportamentais.Iterator;
 using DesignPatterns.Comportamentais.Command;
 using DesignPatterns.Comportamentais.Visitor;
 using DesignPatterns.Comportamentais.Memento;
+using DesignPatterns.Comportamentais.Mediator;
 
 while (true)
 {
@@ -118,9 +119,9 @@ while (true)
         case "16":
             Iterator.Executar();
             break;
-        // case "17":
-        //     Mediator.Executar();
-        //     break;
+        case "17":
+            Mediator.Executar();
+            break;
         case "18":
             Memento.Executar();
             break;
