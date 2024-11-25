@@ -17,6 +17,7 @@ using DesignPatterns.Comportamentais.Command;
 using DesignPatterns.Comportamentais.Visitor;
 using DesignPatterns.Comportamentais.Memento;
 using DesignPatterns.Comportamentais.Mediator;
+using DesignPatterns.Criacionais.Singleton;
 
 while (true)
 {
@@ -71,9 +72,9 @@ while (true)
         case "2":
             FactoryMethod.Executar();
             break;
-        // case "3":
-        //     Singleton.Executar();
-        //     break;
+        case "3":
+            Singleton.Executar();
+            break;
         case "4":
             Builder.Executar();
             break;

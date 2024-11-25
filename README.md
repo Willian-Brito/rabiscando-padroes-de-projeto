@@ -161,7 +161,7 @@ Os Padrões são divididos em 3 grupos:
 
 ### 5. Singleton
 
-- **Definição:** O padrão Singleton garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.
+- **Definição:** O padrão Singleton garante que uma classe tenha **apenas uma instância** e fornece um **ponto global** de **acesso** a ela.
 
 - **Contexto:** Criação de um único objeto de conexão a um banco de dados, evitando abertura de conexões desnecessárias.
 
@@ -616,7 +616,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 </div>
 
 ### Mediator
-- **Definição:** O padrão Mediator é um padrão de projeto que serve para encapsular a maneira que um conjunto de objetos interage, ou seja, a comunicação entre os objetos é estabelecida através de um objeto mediador (Mediator). Este padrão de projeto promove o fraco acoplamento ao evitar que objetos se refiram uns aos outros de forma explícita e permite variar suas intenções independentemente.
+- **Definição:** O padrão Mediator é um padrão de projeto que serve para **encapsular a maneira que um conjunto de objetos interage**, ou seja, a comunicação entre os objetos é estabelecida através de um objeto mediador (Mediator). Este padrão de projeto promove o fraco acoplamento ao evitar que objetos se refiram uns aos outros de forma explícita e permite variar suas intenções independentemente.
 
 - **Contexto:** Criação de um mediator em um chat onde existe um chatBot moderador que impede que uma pessoa envie duas mensagens consecutivas.
 
