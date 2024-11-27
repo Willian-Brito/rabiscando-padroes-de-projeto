@@ -1,12 +1,16 @@
 ﻿using DesignPatterns.Criacionais.AbstractFactory;
 using DesignPatterns.Criacionais.FactoryMethod;
 using DesignPatterns.Criacionais.Builder;
+using DesignPatterns.Criacionais.Singleton;
+using DesignPatterns.Criacionais.Prototype;
+
 using DesignPatterns.Estruturais.Adapter;
 using DesignPatterns.Estruturais.Decorator;
 using DesignPatterns.Estruturais.Facade;
 using DesignPatterns.Estruturais.Bridge;
 using DesignPatterns.Estruturais.Proxy;
 using DesignPatterns.Estruturais.Composite;
+
 using DesignPatterns.Comportamentais.Observer;
 using DesignPatterns.Comportamentais.State;
 using DesignPatterns.Comportamentais.Strategy;
@@ -17,7 +21,6 @@ using DesignPatterns.Comportamentais.Command;
 using DesignPatterns.Comportamentais.Visitor;
 using DesignPatterns.Comportamentais.Memento;
 using DesignPatterns.Comportamentais.Mediator;
-using DesignPatterns.Criacionais.Singleton;
 
 while (true)
 {
@@ -78,9 +81,9 @@ while (true)
         case "4":
             Builder.Executar();
             break;
-        // case "5":
-        //     Prototype.Executar();
-        //     break;
+        case "5":
+            Prototype.Executar();
+            break;
         #endregion
 
         #region 02 - Padrões Estruturais
