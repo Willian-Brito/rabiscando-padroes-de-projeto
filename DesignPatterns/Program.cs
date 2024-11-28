@@ -10,6 +10,7 @@ using DesignPatterns.Estruturais.Facade;
 using DesignPatterns.Estruturais.Bridge;
 using DesignPatterns.Estruturais.Proxy;
 using DesignPatterns.Estruturais.Composite;
+using DesignPatterns.Estruturais.Flyweight;
 
 using DesignPatterns.Comportamentais.Observer;
 using DesignPatterns.Comportamentais.State;
@@ -102,9 +103,9 @@ while (true)
         case "10":
             Facade.Executar();
             break;
-        // case "11":
-        //     Flyweight.Executar();
-        //     break;
+        case "11":
+            Flyweight.Executar();
+            break;
         case "12":
             Proxy.Executar();
             break;
