@@ -15,7 +15,7 @@ Os Padrões são divididos em 3 grupos:
 
  ### 1. Abstract Factory
 
-- **Definição:** O padrão Abstract Factory fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
+- **Definição:** O padrão Abstract Factory fornece uma interface para **criar famílias de objetos relacionados** ou dependentes sem especificar suas classes concretas.
 
 - **Contexto:** Simulação de um emissor de boletos com diferentes cálculos de juros, desconto e multa para dois bancos diferentes.
 
@@ -59,14 +59,14 @@ Os Padrões são divididos em 3 grupos:
 
 ### 2. Builder
 
-- **Definição:** O padrão Builder separa a construção de um objeto complexo de sua representação de modo que o mesmo processo de construção de um objeto possa criar diferentes representações.
+- **Definição:** O padrão Builder **separa a construção de um objeto complexo de sua representação** de modo que o mesmo processo de construção de um objeto possa criar **diferentes representações**.
 
 - **Contexto:** Criação de um Builder para uma classe que gera PDFs, onde tal classe possui muitos parâmetros em sua criação.
 
 - **Aplicabilidade (Quando Utilizar):**
 	- Quando o algoritmo que cria um objeto complexo deve ser independente das partes que o compõem e de como tais partes são montadas.
 	
-	- Quando o processo de construção deve diferentes para o objeto que é construído.
+	- Quando o processo de construção deve permitir representações diferentes para o objeto que é construído.
 
 - **Componentes:**
 
@@ -97,7 +97,7 @@ Os Padrões são divididos em 3 grupos:
 
 ### 3. Factory Method
 
-- **Definição:** O Padrão Factory Method define uma interface para criar um objeto, mas permite que a subclasses possam decidir qual classe instanciar, possibilitando que uma classe seja capaz de prorrogar a instanciação de uma classe para subclasses.
+- **Definição:** O Padrão Factory Method **define uma interface para criar um objeto**, mas **permite que a subclasses possam decidir qual classe instanciar**, possibilitando que uma classe seja capaz de prorrogar a instanciação de uma classe para subclasses.
 
 - **Contexto:** Simulação de um emissor de boletos com diferentes cálculos de juros, desconto e multa para dois bancos diferentes. Tais boletos também possuem 3 diferente prazos de vencimentos pré-estipulados.
 
@@ -110,13 +110,13 @@ Os Padrões são divididos em 3 grupos:
 
 
 - **Componentes:**
-	- **Produto:** Define a interface dos objetos que serão criados pelo método de factoryMethod() dos CriadoresConcretos.
+	- **Produto:** Define a interface dos objetos que serão criados pelo método de FactoryMethod() dos CriadoresConcretos.
 
 	- **ProdutoConcreto:** Implementa a interface Produto. Isso permite que classes que usam os Produtos possam esperar a interface Produto ao invés de um ProdutoConcreto.
 
-	- **Criador:** Declara o método fábrica (Factory Method) o qual retorna um objeto ProdutoConcreto. Também pode definir uma implementação padrão do factoryMethod, para o caso de uma subclasse o omitir. Tal implementação também precisa retornar um ProdutoConcreto. O Criador também é a classe que utiliza o ProdutoConcreto retornado pelo método factoryMethod.
+	- **Criador:** Declara o método fábrica (Factory Method) o qual retorna um objeto ProdutoConcreto. Também pode definir uma implementação padrão do FactoryMethod, para o caso de uma subclasse o omitir. Tal implementação também precisa retornar um ProdutoConcreto. O Criador também é a classe que utiliza o ProdutoConcreto retornado pelo método FactoryMethod.
 
-	- **CriadorConcreto:** Implementa ou sobrescreve o factoryMethod(), para retornar uma instância de um ProdutoConcreto.
+	- **CriadorConcreto:** Implementa ou sobrescreve o FactoryMethod(), para retornar uma instância de um ProdutoConcreto.
 
 - **Diagrama de Classe (Com Contexto):**
 <div align="center">
@@ -125,16 +125,16 @@ Os Padrões são divididos em 3 grupos:
 
 - **Diagrama de Classe (Sem Contexto):**
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Willian-Brito/rabiscando-padroes-de-projeto/refs/heads/main/prints/factory%20method.png" alt="diagrama de classe sem contexto" />
+  <img src="https://raw.githubusercontent.com/Willian-Brito/rabiscando-padroes-de-projeto/refs/heads/main/prints/factory%20method%20-%20original.png" alt="diagrama de classe sem contexto" />
 </div>
 
 ### 4. Prototype
 
-- **Definição:** O padrão Prototype especifica tipos de objetos a serem criados usando como base uma instância de outro objeto que serve como protótipo. Este padrão permite a clonagem de objetos existentes sem provocar dependência de suas classes.
+- **Definição:** O padrão Prototype especifica tipos de objetos a serem criados usando como base uma instância de outro objeto que serve como protótipo. Este padrão permite a **clonagem de objetos** existentes **sem provocar dependência** de suas classes.
 
 - **Contexto:** Criação de protótipos de objetos semelhantes e de difícil criação que são muito requisitados no sistema de uma biblioteca virtual.
 
-- **Aplicabilidade (Quando Utilizar):** O padrão Prototype pode ser utilizado quando um sistema deve ser independente de como seus produtos são criados, compostos e representados. este padrão também pode ser utilizado:
+- **Aplicabilidade (Quando Utilizar):** O padrão Prototype pode ser utilizado quando um sistema deve ser independente de como seus produtos são criados, compostos e representados. Este padrão também pode ser utilizado:
 
 	- Quando as classes a serem instanciadas são especificadas em tempo de execução, por exemplo, por carregamento dinâmico.
 
@@ -166,11 +166,10 @@ Os Padrões são divididos em 3 grupos:
 - **Contexto:** Criação de um único objeto de conexão a um banco de dados, evitando abertura de conexões desnecessárias.
 
 - **Aplicabilidade (Quando Utilizar):**
-	- Quando deve existir exatamente uma instância de uma classe e ela deve estar acessível aos clientes a partir de um ponto de acesso global
-	conhecido.
+	- Quando deve existir exatamente uma instância de uma classe e ela deve estar acessível aos clientes a partir de um ponto de acesso global conhecido.
 
 - **Componentes:** Esse padrão é composto por apenas uma classe.
-	- O atributo uniqueInstance contém a única instância de Singleton.
+	- O atributo UniqueInstance contém a única instância de Singleton.
 
 	- O método GetInstance() é estático, o que significa que é um método de classe, então pode ser acessado a partir de qualquer lugar do código utilizando Singleton.GetInstance();
 
@@ -188,7 +187,7 @@ Os Padrões são divididos em 3 grupos:
 
 ### 6. Adapter
 
-- **Definição:** O padrão Adapter converte a interface de uma classe para outra interface que o cliente esperar encontrar. O Adaptador permite que classes com interfaces incompatíveis trabalhem juntas.
+- **Definição:** O padrão **Adapter converte a interface de uma classe para outra interface que o cliente esperar encontrar**. O Adaptador permite que classes com interfaces incompatíveis trabalhem juntas.
 
 - **Contexto:** Adaptação de interfaces de Gateway de pagamentos que antes eram incompatíveis com a interface que nosso sistema esperava.
 
@@ -220,7 +219,7 @@ Os Padrões são divididos em 3 grupos:
 
 ### 7. Bridge
 
-- **Definição:** O Padrão Bridge desacopla uma abstração de sua implementação, ou seja, permite dividir uma classe grande ou um conjunto de classes diretamente ligadas em duas hierarquias separadas, deste modo as duas hierarquias podem variar de forma independente.
+- **Definição:** O Padrão Bridge **desacopla uma abstração de sua implementação**, ou seja, permite dividir uma classe grande ou um conjunto de classes diretamente ligadas em duas hierarquias separadas, deste modo as duas hierarquias podem variar de forma independente.
 
 - **Contexto:** Remoção de classes desnecessárias para o envio de mensagens que partem de  emissores​ de tipos distintos. Tais mensagens podem ser enviadas por canais diferentes (e-mail e SMS).
 
@@ -230,8 +229,6 @@ Os Padrões são divididos em 3 grupos:
 	- Quando tanto as abstrações quanto suas implementações devem ser extensíveis por subclassificação. Nesse caso, o padrão Bridge permite combinar as diferentes abstrações e implementações e estendê-las independentemente.
 
 	- Quando mudanças na implementação de uma abstração não devem causar impacto nos clientes (o cliente não pode ser recompilado).
-
-	- Quando existe uma proliferação de classes, como mostrado anteriormente no “Diagrama de classes de envio de mensagens por email e SMS”. Essa hierarquia de classes indica a necessidade de dividir um objeto em duas partes.
 
 	- Quando se deseja compartilhar uma implementação entre vários objetos, e esse fato deve estar oculto no cliente.
 
@@ -256,7 +253,7 @@ Os Padrões são divididos em 3 grupos:
 
 ### 8. Composite
 
-- **Definição:** ​O padrão Composite permite a composição de objetos em estruturas de árvore para representar hierarquias parte-todo. Com esse padrão, os clientes podem tratar objetos individuais ou composições de objetos de maneira transparente e uniforme.
+- **Definição:** ​O padrão Composite permite a composição de objetos em **estruturas de árvore** para representar hierarquias parte-todo. Com esse padrão, **os clientes podem tratar objetos individuais ou composições de objetos de maneira transparente e uniforme**.
 
 - **Contexto:** Consulta, inclusão e remoção de arquivos em um sistema de diretórios que tem uma árvore como estrutura de dados. O diretório é organizado em pastas e sub-pastas.
 
@@ -287,7 +284,7 @@ Os Padrões são divididos em 3 grupos:
 
 ### 9. Decorator
 
-- **Definição:** O Padrão Decorator anexa responsabilidades adicionais a um objeto dinamicamente. Os Decorators fornecem uma alternativa flexível ao uso de subclasses para extensão de funcionalidades.
+- **Definição:** O Padrão Decorator **anexa responsabilidades adicionais a um objeto dinamicamente**. Os Decorators fornecem uma alternativa flexível ao uso de subclasses para extensão de funcionalidades.
 
 - **Contexto:** Cálculo de preço de pizzas no sistema de uma pizzaria onde existem diversos acréscimos de ingredientes para cada pizza.
 
@@ -300,7 +297,7 @@ Os Padrões são divididos em 3 grupos:
 
 - **Componentes:**
 
-	- **Component:** É o supertipo comum entre componenteConcreto e Decorator. Pode ser uma classe abstrata ou interface. Cada Component pode ser usado sozinho ou englobado por um decorator.
+	- **Component:** É o supertipo comum entre ComponenteConcreto e Decorator. Pode ser uma classe abstrata ou interface. Cada Component pode ser usado sozinho ou englobado por um decorator.
 	
 	- **ComponenteConcreto:** É o objeto ao qual novos comportamentos serão adicionados dinamicamente por meio dos Decorators. Ele estende Component.
 
@@ -320,7 +317,7 @@ Os Padrões são divididos em 3 grupos:
 
 ### 10. Facade
 
-- **Definição:** O padrão Facade fornece uma interface unificada para um conjunto de interfaces em um subsistema. O Facade define uma interface de nível mais alto que facilita a utilização do subsistema.
+- **Definição:** O padrão Facade **fornece uma interface unificada para um conjunto de interfaces em um subsistema**. O Facade define uma interface de nível mais alto que facilita a utilização do subsistema.
 
 - **Contexto:** Simplificação da interface do sub-sistema de vendas de um e-commerce.
 
@@ -329,14 +326,13 @@ Os Padrões são divididos em 3 grupos:
 
 	- Quando existem muitas dependências entre clientes e as classes de implementação de uma abstração. Introduzir uma fachada para desacoplar o subsistema dos clientes e de outros subsistemas, promove a independência e a portabilidade do subsistema.
 
-	- Quando se deseja estruturar subsistemas em camadas. Uma fachada define um ponto de entrada para cada nível do subsistema. Se os subsistemas
-	são dependentes, será possível simplificar as dependências entre eles, fazendo-os se comunicar apenas através de suas fachadas.
+	- Quando se deseja estruturar subsistemas em camadas. Uma fachada define um ponto de entrada para cada nível do subsistema. Se os subsistemas são dependentes, será possível simplificar as dependências entre eles, fazendo-os se comunicar apenas através de suas fachadas.
 
 - **Componentes:**
 
 	- **Cliente:** É a classe que utiliza as facilidades oferecidas pela classe Facade.
 
-	- **Facade:** Classe que fornece uma interface unificada e mais simples para o cliente. Ela Sabe quais classes de subsistema são responsáveis ​por uma solicitação feita pelo Cliente, delega tais solicitações aos objetos apropriados do subsistema.
+	- **Facade:** Classe que fornece uma interface unificada e mais simples para o cliente. Ela sabe quais classes de subsistema são responsáveis ​por uma solicitação feita pelo Cliente, delega tais solicitações aos objetos apropriados do subsistema.
 
 	- **Subsistema mais complexo:** Possui as implementações das funcionalidades do subsistema. É o responsável por responder às solicitações feitas pela classe Facade. Não sabe que Facade existe.
 
@@ -352,13 +348,14 @@ Os Padrões são divididos em 3 grupos:
 
 ### 11. Flyweight
 
-- **Definição:** ​​O padrão Flyweight permite usar compartilhamento para suportar grandes quantidades de objetos de granularidade fina.
+- **Definição:** ​​O padrão Flyweight permite usar **compartilhamento** para suportar grandes quantidades **de objetos** de **granularidade fina**.
 
 - **Contexto:** Economia de armazenamento ao compartilhar informações comuns entre milhares de objetos "Árvore" em um software para criação de projetos de reflorestamento.
 
 - **Aplicabilidade (Quando Utilizar):** A eficiência do padrão Flyweight depende muito de como e onde ele é aplicado. É recomendado que este padrão seja aplicado somente quando todas as condições abaixo forem verdadeiras:
 
 	- Uma aplicação utiliza um grande número de objetos.
+
 	- Os custos de armazenamento são altos por causa da grande quantidade de objetos.
 
 	- Muitos objetos podem compartilhar uma mesma representação e é possível separar o estado extrínseco dos mesmos.
@@ -369,15 +366,15 @@ Os Padrões são divididos em 3 grupos:
 
 - **Componentes:**
 
-	- **Flyweight:** Declara uma interface através da qual Flyweights podem receber e atuar sobre estados extrínsecos.
+	- **Flyweight:** Declara uma interface através da qual Flyweights podem receber e atuar sobre estados extrínsecos (externo).
 
-	- **FlyweightConcreto:** Implementa a interface Flyweight e acrescenta armazenamento para estados intrínsecos, se houver. Um objeto FlyweightConcreto deve ser compartilhável. Qualquer estado que ele armazene deve ser intrínseco, ou seja, imutável e independente do contexto que o objeto FlyweightConcreto se encontra.
+	- **FlyweightConcreto:** Implementa a interface Flyweight e acrescenta armazenamento para estados intrínsecos (internos), se houver. Um objeto FlyweightConcreto deve ser compartilhável. Qualquer estado que ele armazene deve ser intrínseco, ou seja, imutável e independente do contexto que o objeto FlyweightConcreto se encontra.
 
 	- **FlyweightConcretoNaoCompartilhavel:** Nem todas as subclasses (caso existam) de Flyweight necessitam ser compartilháveis. A interface Flyweight não força ou garante tal compartilhamento. É comum que objetos FlyweightConcretoNaoCompartilhavel tenham objetos FlyweightConcreto como filhos em algum nível da estrutura.
 
 	- **FabricaFlyweight:** Além de criar e gerenciar objetos flyweight essa classe também garante que o Flyweights sejam compartilhadas de forma apropriada. Quando um cliente solicita um Flyweight, a classe FabricaFlyweight fornece uma instância existente que seja apropriada, caso tal instância ainda não exista, FabricaFlyweight cria uma instância que atenda a solicitação.
 
-	- **Cliente:** Mantêm uma referência para flyweight(s) armazena o estado extrínseco do flyweight(s).
+	- **Cliente:** Mantêm uma referência para flyweight(s) armazena o estado extrínseco do(s) flyweight(s).
 
 - **Diagrama de Classe (Com Contexto):**
 <div align="center">
@@ -391,7 +388,7 @@ Os Padrões são divididos em 3 grupos:
 
 ### 12. Proxy
 
-- **Definição:** ​O padrão proxy fornece um substituto ou representante de outro objeto para gerenciar o acesso a ele.
+- **Definição:** ​O padrão proxy **fornece um substituto** ou representante de outro objeto para **gerenciar o acesso** a ele.
 
 - **Contexto:** Criação de um objeto Proxy Virtual para um objeto que demora muito para responder solicitações. O papel do proxy nesse exemplo é retardar a criação de tal objeto até que ele seja estritamente necessário.
 
@@ -425,8 +422,10 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 
 		Algumas outras responsabilidades variam de acordo com o tipo de proxy.
 
-		- Os ​por **proxies remotos** são responsáveis codificar uma solicitação e seus argumentos e por enviar tal solicitação codificada para o ObjetoReal em um espaço de endereço diferente.
-		- Já os **proxies virtuais** podem fazer cache de informações adicionais sobre o ObjetoReal, para seja possível adiar o acesso direto a ele.
+		- Os **proxies remotos** são responsáveis por codificar uma solicitação e seus argumentos e por enviar tal solicitação codificada para o ObjetoReal em um espaço de endereço diferente.
+
+		- Já os **proxies virtuais** podem fazer cache de informações adicionais sobre o ObjetoReal, para que seja possível adiar o acesso direto a ele.
+
 		- Por fim, os **proxies de proteção** verificam se o Cliente possui as permissões de acesso necessárias para executar uma solicitação.
 
 - **Diagrama de Classe (Com Contexto):**
@@ -443,7 +442,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 
 ### Chain of Responsibility
 
-- **Definição:** O Padrão Chain of Responsibility evita o acoplamento do remetente de uma solicitação ao seu receptor, dando a mais de um objeto a oportunidade de tratar a solicitação. Ele encadeia os objetos receptores, passando a solicitação ao longo da cadeia até que um objeto a trate.
+- **Definição:** O Padrão Chain of Responsibility **evita o acoplamento do remetente de uma solicitação** ao seu receptor, dando a mais de um objeto a oportunidade de tratar a solicitação. Ele encadeia os objetos receptores, **passando a solicitação ao longo da cadeia até que um objeto a trate**.
 
 - **Contexto:** Calculo de pontos em um plano de fidelização de cliente com base no valor do pedido feito no sistema de uma hamburgueria.
 
@@ -473,7 +472,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 
 ### Command
 
-- **Definição:** ​O padrão de projeto Command encapsula uma solicitação como um objeto, isso lhe permite parametrizar clientes com diferentes solicitações, enfileirar ou registrar (log) solicitações e suportar solicitações que podem ser desfeitas.
+- **Definição:** ​O padrão de projeto Command **encapsula uma solicitação como um objeto**, isso lhe permite parametrizar clientes com diferentes solicitações, enfileirar ou registrar (log) solicitações e **suportar solicitações que podem ser desfeitas**.
 
 - **Contexto:** Dinamização e automação dos comandos que um aplicativo envia para dispositivos inteligentes, tais como lâmpadas e aparelhos de ar-condicionado em uma smart home.
 
@@ -492,25 +491,26 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 
 	- Para suportar desfazer operações:
 
-		- Para desfazer seus efeitos, um comando pode armazenar os estados em que objeto receptor se encontrava antes da a execução das ações (chamada do método execute()).
+		- Para desfazer seus efeitos, um comando pode armazenar os estados em que objeto receptor se encontrava antes da a execução das ações (chamada do método Execute()).
 
-		- A interface Command pode conter uma operação undo(), que reverte os efeitos de uma chamada anterior de execute(). De acordo com a complexidade da reversão ela pode ser baseada nos estados em que o receptor se encontrava anteriormente.
+		- A interface Command pode conter uma operação Undo(), que reverte os efeitos de uma chamada anterior de Execute(). De acordo com a complexidade da reversão ela pode ser baseada nos estados em que o receptor se encontrava anteriormente.
 
 		- Os comandos executados podem ser armazenados em uma lista histórica.
 
-		- O nível ilimitado de desfazer e refazer operações é obtido percorrendo esta lista para trás e para frente, chamando operações undo() e execute() respectivamente.
+		- O nível ilimitado de desfazer e refazer operações é obtido percorrendo esta lista para trás e para frente, chamando operações Undo() e Execute() respectivamente.
 
 	- Para tornar possível que mudanças no sistema sejam recuperadas por meio de um registro de mudanças (logging) em caso de queda:
 
-		- Ao aumentar a interface de Command com as operações load() e store(), pode-se manter um registro (log) persistente das mudanças feitas no objeto receptor.
+		- Ao aumentar a interface de Command com as operações Load() e Store(), pode-se manter um registro (log) persistente das mudanças feitas no objeto receptor.
 
-		- A recuperação de uma queda de sistema envolve a recarga dos comandos registrados a partir do disco e sua reexecução com a operação execute().
+		- A recuperação de uma queda de sistema envolve a recarga dos comandos registrados a partir do disco e sua reexecução com a operação Execute().
 
 	- Se faz necessário estruturar um sistema em torno de operações de alto nível construídas sobre operações primitivas:
 
 		- Tal estrutura é comum em sistemas de informação que suportam transações.
 
 		- Uma transação encapsula um conjunto de mudanças nos dados.
+
 		- O padrão Command fornece uma maneira de modelar transações, já que os comandos podem ser desfeitos para o caso algum deles falhar.
 
 		- Os Commands têm uma interface comum, permitindo invocar todas as transações da mesma maneira.
@@ -521,9 +521,9 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 
 	- **Cliente:** É o responsável pela criação de um ComandoConcreto e pela definição de seu receptor.
 
-	- **Invocador:** Contém um comando e em algum momento pede ao comando para entender uma solicitação chamando o seu método execute().
+	- **Invocador:** Contém um comando e em algum momento pede ao comando para entender uma solicitação chamando o seu método Execute().
 
-	- **Command:** Declara uma interface para todos os comandos. Um comando é invocado através de seu método execute(), que pede a um receptor para executar uma ação. Essa interface também pode possuir um método undo(), que desfaz a última ação executada.
+	- **Command:** Declara uma interface para todos os comandos. Um comando é invocado através de seu método Execute(), que pede a um receptor para executar uma ação. Essa interface também pode possuir um método Undo(), que desfaz a última ação executada.
 
 	- **ComandoConcreto:** Implementa a interface Command e define um vínculo entre uma ação e um objeto Receptor. Implementa o método execute através da invocação da(s) correspondente(s) operação(ões) no Receptor.
 
@@ -541,7 +541,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 
 ### Interpreter
 
-- **Definição:** O padrão Interpreter busca definir uma representação para a gramática de uma determinada linguagem, juntamente com um interpretador que usa tal representação para interpretar sentenças dessa linguagem.
+- **Definição:** O padrão Interpreter busca definir uma **representação para a gramática** de uma determinada **linguagem**, juntamente com um **interpretador** que usa tal representação para interpretar **sentenças dessa linguagem**.
 
 - **Contexto:** Criação de um interpretador de expressões matemáticas de adição, subtração, multiplicação e divisão entre dígitos ou variáveis. Tais expressões seguem a NPS (reverse polish notation).
 
@@ -553,17 +553,17 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 
 - **Componentes:**
 
-	- **ExpressaoAbstrata:** Declara um método abstrato interpretar() comum a todos os nós na árvore sintática abstrata.
+	- **ExpressaoAbstrata:** Declara um método abstrato Interpretar() comum a todos os nós na árvore sintática abstrata.
 
 	- **ExpressaoNaoTerminal:**
 		- É necessária uma classe desse tipo para cada regra R ::= R1 R2 .. .Rn da gramática.
 
 		- Mantém variáveis de instância do tipo ExpressaoAbstrata para cada um dos símbolos R1 a Rn.
 
-		- Implementa um método interpretar() associado aos símbolos não terminais da gramática. O método interpretar() chama a si próprio recursivamente nas variáveis que representam R1 a Rn.
+		- Implementa um método Interpretar() associado aos símbolos não terminais da gramática. O método Interpretar() chama a si próprio recursivamente nas variáveis que representam R1 a Rn.
 
 	- **ExpressaoTerminal:**
-		- Implementa um método interpretar() associado aos símbolos terminais da gramática, ele define o caso base da recursão iniciada por uma ExpressaoNaoTerminal.
+		- Implementa um método Interpretar() associado aos símbolos terminais da gramática, ele define o caso base da recursão iniciada por uma ExpressaoNaoTerminal.
 
 		- É necessária uma instância para cada símbolo terminal em uma sentença.
 
@@ -583,7 +583,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 
 ### Iterator
 
-- **Definição:** ​O padrão de projeto Iterator  fornece uma maneira de acessar, sequencialmente, os elementos de um objeto agregado sem expor a sua representação subjacente.
+- **Definição:** ​O padrão de projeto Iterator **fornece uma maneira de acessar**, sequencialmente, os elementos de um objeto agregado sem **expor a sua representação** subjacente.
 
 - **Contexto:** Criação de iteradores que atuam sobre uma lista e sobre uma matriz, removendo tal responsabilidade de quem as utiliza.
 
@@ -603,7 +603,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 
 	- **Iterator:** Fornece a interface que todos os iteradores concretos devem implementar, bem como um conjunto de métodos para acessar os elementos de um agregado.
 
-	- **IteratorConcreto:** Implementa a interface a interface de Iterator e mantém o controle da posição corrente no percurso do agregado.
+	- **IteratorConcreto:** Implementa a interface de Iterator e mantém o controle da posição corrente no percurso do agregado.
 
 - **Diagrama de Classe (Com Contexto):**
 <div align="center">
@@ -616,7 +616,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 </div>
 
 ### Mediator
-- **Definição:** O padrão Mediator é um padrão de projeto que serve para **encapsular a maneira que um conjunto de objetos interage**, ou seja, a comunicação entre os objetos é estabelecida através de um objeto mediador (Mediator). Este padrão de projeto promove o fraco acoplamento ao evitar que objetos se refiram uns aos outros de forma explícita e permite variar suas intenções independentemente.
+- **Definição:** O padrão Mediator é um padrão de projeto que serve para **encapsular e centralizar a maneira que um conjunto de objetos interage**, ou seja, a comunicação entre os objetos é estabelecida através de um objeto mediador (Mediator). Este padrão de projeto promove o fraco acoplamento ao evitar que objetos se refiram uns aos outros de forma explícita e permite variar suas intenções independentemente.
 
 - **Contexto:** Criação de um mediator em um chat onde existe um chatBot moderador que impede que uma pessoa envie duas mensagens consecutivas.
 
@@ -651,7 +651,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 </div>
 
 ### Visitor
-- **Definição:** O padrão de projeto Visitor representa uma operação a ser executada nos membros de uma estrutura de objetos. Ele permite definir uma nova operação sem mudar as classes dos membros sobre quais opera.
+- **Definição:** O padrão de projeto Visitor representa uma **operação a ser executada nos membros de uma estrutura de objetos**. Ele permite definir uma nova operação **sem mudar as classes** dos membros sobre quais opera.
 
 - **Contexto:** Cálculo de quanto lucro cada produto, departamento e supermercado é capaz de gerar em uma rede de supermercados.
 
@@ -667,9 +667,9 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 
 	- **VisitanteConcreto:** Um VisitanteConcreto implementa versões diferentes do mesmo comportamento, feitos sob medida para diferentes classes de ElementosConcretos.
 
-	- **Elemento:** Define uma operação aceitar() que aceita um Visitor como parâmetro.
+	- **Elemento:** Define uma operação Aceitar() que aceita um Visitor como parâmetro.
 
-	- **ElementoConcreto:** Implementa uma operação aceitar() que aceita um Visitor como parâmetro. O propósito de tal método é redirecionar a chamada para o método apropriado do Visitor recebido como parâmetro que corresponde com a atual classe ElementoConcreto.
+	- **ElementoConcreto:** Implementa uma operação Aceitar() que aceita um Visitor como parâmetro. O propósito de tal método é redirecionar a chamada para o método apropriado do Visitor recebido como parâmetro que corresponde com a atual classe ElementoConcreto.
 
 	- **EstruturaDeObjetos:**
 		- É opcional.
@@ -689,7 +689,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 </div>
 
 ### Memento
-- **Definição:** O padrão Memento permite capturar e externalizar um estado interno de um objeto sem violar o encapsulamento, deste modo, o objeto pode ser restaurado no futuro para este estado capturado.
+- **Definição:** O padrão Memento **permite capturar e externalizar um estado interno de um objeto** sem violar o encapsulamento, deste modo, o objeto pode ser **restaurado no futuro** para este estado capturado.
 
 - **Contexto:** Criação de um histórico de mudanças feitas em um textbox que possui diversos atributos, tais como font-family, font-size posição no eixo x e y entre outros. Graças ao Memento o textbox poderá ser restaurado a um estado anterior.
 
@@ -708,7 +708,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 
 	- **Originador:** Cria um Memento que contém um screenshot de seu estado interno atual. Utiliza o Memento para restaurar seu estado interno.
 
-	- **Cuidador:** É responsável pela custódia do Memento, ele nunca consulta ou manipula o conteúdo interno de um Memento. O Cuidador pode também	manter registros do histórico do Originador armazenando os Mementos em um pilha e os recuperando de maneira apropriada para restaurar o Originador.
+	- **Cuidador:** É responsável pela custódia do Memento, ele nunca consulta ou manipula o conteúdo interno de um Memento. O Cuidador pode também	manter registros do histórico do Originador armazenando os Mementos em uma pilha e os recuperando de maneira apropriada para restaurar o Originador.
 
 - **Diagrama de Classe (Com Contexto):**
 <div align="center">
@@ -721,7 +721,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 </div>
 
 ### Observer
-- **Definição:** O Observer é um padrão de projeto de software que define uma dependência um-para-muitos entre objetos, de modo que quando um objeto muda seu estado, todos seus dependentes são notificados e atualizados automaticamente.
+- **Definição:** O Observer é um padrão de projeto de software que **define uma dependência um-para-muitos entre objetos**, de modo que **quando um objeto muda seu estado, todos seus dependentes são notificados** e atualizados automaticamente.
 
 - **Contexto:** Implementação de uma Newsletter onde clientes, funcionários, parceiros e fornecedores podem se inscrever para receber emails de notícias sobre a determinada empresa.
 
@@ -737,7 +737,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 
 	- **Observer:** Define uma interface de atualização para objetos que devem ser notificados sobre alterações em um Subject.
 
-	- **AssuntoConcreto:** Sempre implementa a interface Subject além dos métodos para registrar e remover observers, o AssuntoConcreto implementa o método notifyObservers() que é utilizados para atualizar todos os observadores atuais sempre o que o estado do AssuntoConcreto é alterado. Também pode ter métodos para definir e obter seu estado.
+	- **AssuntoConcreto:** Sempre implementa a interface Subject além dos métodos para registrar e remover observers, o AssuntoConcreto implementa o método NotifyObservers() que é utilizados para atualizar todos os observadores atuais sempre o que o estado do AssuntoConcreto é alterado. Também pode ter métodos para definir e obter seu estado.
 
 	- **ObservadoresConcretos:** Podem ser qualquer classe que implemente a interface Observer. Cada observador se registra a um AssuntoConcreto para receber atualizações. Mantém uma referência a um objeto AssuntoConcreto (que é observado por ele). Tal referência serve para saber de onde vem as notificações e para poder se registrar e se remover.
 
@@ -752,7 +752,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 </div>
 
 ### State
-- **Definição:** O padrão de projeto State permite que um objeto altere o seu comportamento quando o seu estado interno muda. O objeto parecerá ter mudado de classe.
+- **Definição:** O padrão de projeto State permite que um objeto **altere o seu comportamento quando o seu estado interno muda**. O objeto parecerá ter mudado de classe.
 
 - **Contexto:** Gerenciamento de ações que podem ser realizadas em um pedido de um e-commerce conforme o estado em que o pedido se encontra.
 
@@ -779,7 +779,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 </div>
 
 ### Strategy:
-- **Definição:** O padrão de projeto Strategy define uma família de algoritmos que podem ser intercambiados, ou seja, utilizar um algoritmo no lugar de outro, conforme a necessidade de quem os utiliza.
+- **Definição:** O padrão de projeto Strategy define uma **família de algoritmos** que podem ser **intercambiados**, ou seja, utilizar um algoritmo no lugar de outro, conforme a necessidade de quem os utiliza.
 		
 - **Contexto:** Cálculo de diferentes tipos de frete disponíveis para pedidos feitos em setores distintos de um e-commerce.
 
@@ -787,6 +787,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 	- O padrão é aplicado quando muitas classes fazem a mesma coisa de forma diferente.
 
 	- Quando se necessita de variantes de um algoritmo.
+
 	- Quando é necessário evitar a exposição de dados ou algoritmos sensíveis os quais clientes não podem ter conhecimento.
 
 	- Remoção de operadores condicionais que determinam o comportamento do algoritmo com base em objetos diferentes.
@@ -809,7 +810,7 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 </div>
 
 ### Template Method
-- **Definição:** ​​O padrão Template Method define o esqueleto de um algoritmo dentro de um método, transferindo alguns de seus passos para subclasses.
+- **Definição:** ​​O padrão Template Method define o **esqueleto de um algoritmo dentro de um método**, **transferindo alguns de seus passos para subclasses**.
 		
 - **Contexto:** ​Implementação de um módulo de pagamentos do sistema de uma loja de confecções. Cada tipo de pagamento aplica diferentes taxas e descontos ao seu valor.
 
@@ -821,9 +822,9 @@ Essas são algumas situações comuns onde o padrão Proxy é aplicável:
 	- Evitar duplicação de código entre classes comuns.
 	
 - **Componentes:**
-	- **ClasseAbstrata:** Superclasse abstrata que contém os métodos concretos e abstratos que serão comuns a todas suas subclasses. Implementa o templateMethod() que define o esqueleto de um algoritmo.
+	- **ClasseAbstrata:** Superclasse abstrata que contém os métodos concretos e abstratos que serão comuns a todas suas subclasses. Implementa o TemplateMethod() que define o esqueleto de um algoritmo.
 
-	- **ClasseConcreta:** Classes que herdam os métodos concretos de conforme suas ClasseAbstrata e implementam os métodos abstratos specificidades.
+	- **ClasseConcreta:** Classes que herdam os métodos concretos de conforme suas ClasseAbstrata e implementam os métodos abstratos conforme suas especificidades.
 
 - **Diagrama de Classe (Com Contexto):**
 <div align="center">
