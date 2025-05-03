@@ -3,6 +3,10 @@ Este repositório foi criado para o estudo dos **padrões de projeto do GoF (Gan
 
 Este Guia terá a definição, aplicabilidade, componentes, diagrama original e diagrama da implementação adaptado para nosso contexto.
 
+## 🤔 O que é?
+
+Padrões de projeto são **soluções genéricas** para **problemas recorrentes** dentro de um **contexto**.
+
 ## 🛠️ Grupos de Padrões
 
 **Os Padrões são divididos em 3 grupos:**
@@ -22,7 +26,7 @@ Encapsulam a **criação/instanciação** de objetos, ajuda a tornar um sistema 
 
 ### 🧩 Padrões Estruturais
 
-Definem como classes e objetos são compostos para **formar estruturas maiores**: são padrões de construção de fato, como estruturar as classes e objetos.
+Definem como classes e objetos são compostos para **formar estruturas maiores**: são padrões de construção de fato, como **estruturar as classes e objetos**.
 
 | Padrão | O que resolve |
 | :--- | :--- |
@@ -36,7 +40,7 @@ Definem como classes e objetos são compostos para **formar estruturas maiores**
 
 ### ⚔️ Padrões Comportamentais
 
-Definem algoritmos e **atribuição de responsabilidade entre objetos**, além de definir classes e objetos, também definem os padrões de comunicação entre eles. Foca de fato no comportamento de cada classe ou objeto em relação aos demais.
+Definem algoritmos e **atribuição de responsabilidade entre objetos**, além de definir classes e objetos, também definem os **padrões de comunicação** entre eles. Foca de fato no comportamento de cada classe ou objeto em relação aos demais.
 
 
 | Padrão | O que resolve |
