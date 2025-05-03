@@ -4,12 +4,51 @@ Este repositório foi criado para o estudo dos **padrões de projeto do GoF (Gan
 Este Guia terá a definição, aplicabilidade, componentes, diagrama original e diagrama da implementação adaptado para nosso contexto.
 
 ## 🛠️ Grupos de Padrões
-Os Padrões são divididos em 3 grupos:
-- **Criacionais:** Encapsulam a criação/instanciação de objetos, ajuda a tornar um sistema independente de como seus objetos são criados, compostos e representados.
 
-- **Estruturais:** Definem como classes e objetos são compostos para formar estruturas maiores: são padrões de construção de fato, como estruturar as classes e objetos.
+**Os Padrões são divididos em 3 grupos:**
 
-- **Comportamentais:** Definem algoritmos e atribuição de responsabilidade entre objetos, além de definir classes e objetos, também definem os padrões de comunicação entre eles. Foca de fato no comportamento de cada classe ou objeto em relação aos demais.
+### 📌 Padrões Criacionais
+
+Encapsulam a **criação/instanciação** de objetos, ajuda a tornar um sistema independente de como seus objetos são criados, compostos e representados.
+
+| Padrão | O que resolve |
+| :--- | :--- |
+| **Singleton** | Uma única instância global controlada |
+| **Factory** | Criação de objetos com base em critérios |
+| **Abstract Factory** | Conjuntos de objetos relacionados |
+| **Builder** | Construção passo a passo de objetos complexos |
+| **Prototype** | Clonagem de objetos |
+
+
+### 🧩 Padrões Estruturais
+
+Definem como classes e objetos são compostos para **formar estruturas maiores**: são padrões de construção de fato, como estruturar as classes e objetos.
+
+| Padrão | O que resolve |
+| :--- | :--- |
+| **Adapter** | Converte interface de uma classe para outra esperada |
+| **Decorator** | Adiciona responsabilidades a objetos dinamicamente |
+| **Facade** | Fornece uma interface simplificada para um sistema |
+| **Composite** | Representa hierarquias de objetos |
+| **Proxy** | Controla o acesso a outro objeto |
+| **Bridge** | Separa abstração da implementação |
+| **Flyweight** | Compartilha objetos para economizar memória |
+
+### ⚔️ Padrões Comportamentais
+
+Definem algoritmos e **atribuição de responsabilidade entre objetos**, além de definir classes e objetos, também definem os padrões de comunicação entre eles. Foca de fato no comportamento de cada classe ou objeto em relação aos demais.
+
+
+| Padrão | O que resolve |
+| :--- | :--- |
+| **Strategy** | Variação de algoritmos em tempo de execução |
+| **Observer** | Notificação de mudanças de estado |
+| **Command** | Encapsula comandos como objetos |
+| **Mediator** | Coordena comunicação entre objetos |
+| **State** | Permite que um objeto mude de comportamento dinamicamente |
+| **Chain of Responsibility** | Cadeia de manipuladores para uma requisição |
+| **Template Method** | Define esqueleto de algoritmo com partes variáveis |
+| **Iterator** | Permite percorrer uma coleção sem expor sua estrutura |
 
  ## 📦 Padrões Criacionais
 
